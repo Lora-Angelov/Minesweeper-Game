@@ -1,0 +1,20 @@
+﻿<Window x:Class="Minesweeper.StartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="StartWindow" Height="400" Width="700">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Image Source="https://static.wikia.nocookie.net/smashbroslawlorigins/images/f/ff/Dora-the-explorer.jpg/revision/latest?cb=20160512022239" Stretch="Uniform" Grid.Row="0" Margin="5,15,-5,57" Grid.RowSpan="2" />
+        <TextBlock Text="Hola! Yo soy Dora! Can you help me solve this Game?" Grid.Row="1" FontWeight="Bold" FontSize="24" HorizontalAlignment="Center" Margin="0,20,0,20" />
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,20">
+            <Button x:Name="btnOption1" Content="Yeeeeeeah!" Width="100" Height="30" Margin="5" Click="OptionButton_Click"/>
+            <Button x:Name="btnOption2" Content="Double Yeaah!" Width="100" Height="30" Margin="5" Click="OptionButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

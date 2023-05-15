@@ -1,0 +1,32 @@
+﻿<Window x:Class="Minesweeper.CustomLevelDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Custom Level" Height="200" Width="300" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Content="Rows:"/>
+        <TextBox Grid.Row="0" Grid.Column="1" x:Name="txtRows" Text="10"/>
+
+        <Label Grid.Row="1" Grid.Column="0" Content="Columns:"/>
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="txtCols" Text="10"/>
+
+        <Label Grid.Row="2" Grid.Column="0" Content="Mines:"/>
+        <TextBox Grid.Row="2" Grid.Column="1" x:Name="txtMines" Text="10"/>
+
+        <StackPanel Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Name="btnOk" Content="OK" Margin="0,0,10,0" Click="btnOk_Click"/>
+            <Button x:Name="btnCancel" Content="Cancel" Click="btnCancel_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
+
